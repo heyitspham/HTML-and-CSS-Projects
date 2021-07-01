@@ -1,6 +1,37 @@
+body {
+    font-style: italic;
+    text-align: center;
+}
+
 h1 {color:gold;}
 
 p {
     color:greenyellow;
     text-align:center;
 }            
+
+
+
+
+.Class_A {
+    color: blue;
+}
+
+.font_1 {
+    background-color: black;
+    color: yellow;
+    font-size: large;
+}
+.font_2 {
+    background-color: darkblue;
+    color: white;
+    font-size: medium;
+}
+
+.My_Style {
+    background-color: red;
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: xx-large;
+}
