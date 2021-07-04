@@ -6,7 +6,7 @@ body {
 h1 {color:gold;}
 
 p {
-    color:greenyellow;
+    color:violet;
     text-align:center;
 }            
 
@@ -35,3 +35,25 @@ p {
     font-weight: bold;
     font-size: xx-large;
 }
+
+
+/* Styles for article about breeds. */
+.all-breeds {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+  }
+  
+  .all-breeds > h1, .breed {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .breed {
+    background: white;
+  }
+  
+  .breed > details, p {
+    margin: 4px;
+    font-size: 90%;
+  }
