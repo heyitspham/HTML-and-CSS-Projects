@@ -15,9 +15,12 @@ body {
 }
 
 .container {
-    margin: auto;
+    border: 1px solid rgba(255, 166, 0, 0.75);
+    border-radius: 10px;
+    margin: 25px auto;
     padding: auto;
     text-align: center;
+    width: min-content;
 }
 
 .flex-container {
@@ -55,7 +58,8 @@ body {
 }
 
 .nav {
-    border-radius: 0%;
+    border: 1px solid rgba(255, 166, 0, 0.75);
+    border-radius: 10px;
     margin: auto;
     text-align: center;
     width: auto;
