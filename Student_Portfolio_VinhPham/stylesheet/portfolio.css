@@ -10,7 +10,7 @@ h1 {
     font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
-    color: #1a1a1a; 
+    color: #f4f4f4; 
 }
 
 /* Heading 1 element hover effect */
@@ -29,6 +29,7 @@ h1:hover {
 p {
     font-family: Perpetua, Rockwell Extra Bold;
     text-align: justify; /* Justify text within paragraph elements */
+    color: #f4f4f4;
     letter-spacing: 1px; /* This expands the text slightly */
     font-size: 20px;
     padding-left: 20px; /* Adds padding to the left of the paragraph element */
@@ -54,7 +55,7 @@ p:hover {
 
 /* Anchor elements */
 a {
-    color: blue; /* This ensures all links are blue */
+    color: #32CD32; /* This ensures all links are blue */
 }
 
 /* Quotation elements */
@@ -64,7 +65,7 @@ q {
 
 /* Image elements */
 img {
-    filter: grayscale(75%); /* This rids our pictures of 75% of their color */
+    /*filter: grayscale(75%); /* This rids our pictures of 75% of their color */
     border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
     height: 340px; /* Sets the height of all images */
@@ -91,8 +92,8 @@ img:hover {
 
 /* Styling for footer element */
 footer {
-    padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: white;
+    padding: 1px; /* This gives the footer padding that is equal to 2% of the width of the element's area */
+    background-color: black;
 }
 /***** END OF GENERAL STYLING *****/
 
@@ -106,6 +107,9 @@ footer {
     z-index: 1; /* This ensures other elements don't display over the navbar */
     -webkit-animation: moveNav 5s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
     animation: moveNav 5s; /* This applies the moveNav animation for all other browsers */
+    
+    padding: 7px 0;
+    text-align: center;
 }
 
 /* moveNav animation effect for moving the nav bar in from the left of the screen */
@@ -114,16 +118,13 @@ footer {
     to {left: 0vw;} /* This moves the navbar into place on the screen */
 }
 
-.menu li {
-    display: inline;
-}
-
 /* Navbar links */
 .Navbar a {
-    float: left; /* This specifies that the text floats on the left on the navbar */
+    /*float: left; /* This specifies that the text floats on the left on the navbar */
     display: inline; /* This ensures that other text will be displayed on the same line or row, instead of a new line */
     color: white; /* This is the font color for text on our navbar */
-    padding: 14px 16px; /* This adds padding around our text */
+    background-color: #228B22;
+    padding: 7px 16px; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
     font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
     font-size: 20px; /* This specifies the font size for text on our navbar */
@@ -150,13 +151,13 @@ footer {
 /* Navbar hover effects */
 .Navbar a:hover {
     background-color: #f4f4f4; /* Defines the background color that will display when you hover over the link */
-    color: black; /* This defines the font color that will display when navbar a elements are hovered over */
+    color: #228B22; /* This defines the font color that will display when navbar a elements are hovered over */
     font-weight: bold; /* This makes the text on the navbar bold when hovered over */
 }
 
 /* Navbar home button */
 .Navbar a.active { /* This targets the a element on the navbar with the "active" class */
-    background-color: darkgray;
+    background-color: #228B22;
 }
 /***** END OF NAVBAR STYLING *****/
 
@@ -206,7 +207,7 @@ footer {
     padding: 10px;
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
     height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-    background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
+    /*background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
@@ -222,7 +223,8 @@ footer {
     padding: 10px;
     padding-top: 1.9%;
     height: 400px;
-    background-color: #4d4d4d;
+    background-color: #f4f4f4;
+    ;
 }
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
